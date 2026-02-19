@@ -1,4 +1,4 @@
-FROM debian:buster-20200514-slim
+FROM debian:bookworm-slim
 
 LABEL \
 	maintainer="Michel Stempin <michel.stempin@funkey-project.com>" \
@@ -6,7 +6,7 @@ LABEL \
 	description="Container with everything needed to build FunKey-OS"
 
 # Setup environment
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN \
 	# Install dependencies
@@ -35,8 +35,6 @@ RUN \
 	# MANDATORY source fetching tools
 	wget \
 	# OPTIONAL recommended dependencies
-	python \
-	python-dev \
 	xxd \
 	# OPTIONAL configuration interface dependencies
 	libncurses5-dev \
