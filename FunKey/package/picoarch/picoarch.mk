@@ -4,9 +4,9 @@
 #
 ################################################################################
 
-PICOARCH_VERSION = HEAD
+PICOARCH_VERSION = rg_nano-custom
 PICOARCH_SITE_METHOD = git
-PICOARCH_SITE = https://github.com/DrUm78/picoarch.git
+PICOARCH_SITE = https://github.com/marekkijo/picoarch.git
 PICOARCH_LICENSE = GPL-2+, LGPL-2.1+, MAME
 PICOARCH_LICENSE_FILES = LICENSE
 
